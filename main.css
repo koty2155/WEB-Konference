@@ -1,56 +1,48 @@
+/* Nastavení fontu a barvy hlavičky stránky */
 #header {
     font-family: "Showcard Gothic", Serif;
     background-color: #8F04A8;
 }
 
-#header h1{
+/* Nastavení textu v hlavičce */
+#header h1 {
     color: #DCF900;
-    font-size: 50px;
-    margin: 30px;
-    text-align: center;
+    font-size: 65px;
+    margin: 20px;
 }
-
+/* Nastavení barvu pozadí celé stránky */
 #page {
-    background-color: #C262D3;
+    background-color: #E0E0E0;
 }
 
-#menu{
-    width: 67%;
+/* Vycentrování obrázku v menu */
+#img {
+    margin-top: -7px;
+}
+
+/* Nastavení obsahu stránky */
+#content {
+    background-color: #FFFFFF;
+    width: 80%;
     margin: auto;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    min-height: 440px;
 }
-
-.item {
-    background-color: #5D016D;
-    font-size: 16px;
-    padding: 3px;
+/* */
+#content h2{
     text-align: center;
 }
-.item a {
-    color: #E6FC3D;
-}
-.item a:hover{
-    color: #E6FC3D;
-}
-.item:hover{
-    background-color: #8F04A8;
-}
-
-#content {
-    background-color: #ECFC71;
-    width: 67%;
-    margin: auto;
-    min-height: 750px;
-    padding: 20px;
-    padding-top:150px;
+#content span{
+    color: #DCF900;
+    font-family: "Showcard Gothic", Serif;
 }
 
 #footer {
-    background-color: silver;
-    text-align: center;
     margin:auto;
-    width:67%;
-    border-radius: 0px 0px 50px 50px;
-    min-height: 30px;
+    width: 80%;
+    border-radius: 0px 0px 20px 20px;
+
 }
 /*
 <!--"Droid Sans Mono" -->

@@ -5,46 +5,72 @@
     <link rel="icon" type="image/png" sizes="32x32" href="Icon/favicon.ico">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tomáš Kotous">
     <title>Baltík programátoři</title>
+
+    <style>
+        /* Odstranění zděděné mezery pod hlavou stránky */
+        .jumbotron {
+            margin-bottom: 0px;
+        }
+        /* Odstranění zděděné zakulacení menu. */
+        .navbar {
+            margin-bottom: 0px;
+            border-radius: 0;
+        }
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
+
 </head>
 <body id="page">
-    <div class="col -xs-12 col-sm-12 col-lg-12" id="header">
-        <h1> Programujeme v Baltíku </h1>
-    </div>
-
-    <div id="menu">
-        <div class="col-xs-6 col-sm-3 col-lg-3 item">
-            <a href="index.html"> Úvod </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-lg-3 item">
-            <a> Články </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-lg-3 item">
-            <a> Baltík programátoři </a>
-        </div>
-
-        <div class="col-xs-6 col-sm-3 col-lg-3 item">
-            <a> Baltík programátoři </a>
+    <div class="jumbotron" id="header">
+        <div class="container text-center">
+            <h1> Programujeme v Baltíku </h1>
         </div>
     </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="Image/Baltik.png" width="45px" height="40px" alt="Baltík" id="img"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Úvod</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div id="content">
-        Automaticky antény ní rodinu používat, co čím obratlovců něco teorii úplně ji co vkusné,
-        dal už člun vás provazovce neuvěřitelně s skutečných umělé. </br>
-        Vrchol nenavrtávat nočních průlomovým ale vy nahlíží vystěhování emisí s populace, ne evropy stránky děláte odhaduje.
-        Maravi dozadu osloven nejnepřístupnějšího mých tj. akcí činem speciální z dočkala tak padesátá, jeden tady zajímá vědomostí oficiálně
-        zebřičky zdravou město. Sama: vulkanologové větvičky 2008 ten ale krásná. Modelů nyní tendencím víkendu. Zamrzlé ne úřadu antické,
-        výkon na justice, nefunguje má písně čti době názoru. Z již 480 křídlech záchvatu odehrály přípravu měla, cestu tj. věder obří
-        městečkem uvést aktivitu příjezdu národů mnoha ony odpoledne ventilačními muzeum.
+        <h2>Vítejte na stránce <span>Programujeme v Baltíku</span>!  </h2>
+        <h3> Úvodní informace </h3>
+        <p> Tato stránka slouží ke zlepšení vašich znalostí v úžasném programovacím jazyce Baltík.
+            Tento programovací jazyk byl vytvořen společností SGP Systems </p>
     </div>
 
-    <div id="footer">
-        @Tomáš Kotous 2018
-    </div>
+    <footer class="container-fluid text-center" id="footer">
+        <p>@Tomáš Kotous 2018</p>
+    </footer>
 
 </body>
 </html>
