@@ -1,14 +1,14 @@
 /* Nastavení fontu a barvy hlavičky stránky */
-#header {
+#myheader {
     font-family: "Showcard Gothic", Serif;
     background-color: #8F04A8;
 }
 
 /* Nastavení textu v hlavičce */
-#header h1 {
+#myheader h1 {
     color: #DCF900;
     font-size: 65px;
-    margin: 20px;
+    margin: 10px;
 }
 /* Nastavení barvu pozadí celé stránky */
 #page {
@@ -17,33 +17,37 @@
 
 /* Vycentrování obrázku v menu */
 #img {
-    margin-top: -7px;
+    margin-top: -12px;
 }
 
-/* Nastavení obsahu stránky */
+/* Nastavení obsahu stránky- bílé pozadí, kulaté zarovnání okrajů */
 #content {
+    font-family: Serif;
     background-color: #FFFFFF;
-    width: 80%;
-    margin: auto;
     padding: 20px;
     border-radius: 20px 20px 0px 0px;
-    min-height: 440px;
+    min-height: 500px;
 }
-/* */
+
+/* Nastavení nadpisu v obsahu stránky */
 #content h2{
     text-align: center;
 }
+
+/* Nastavení určitého textu v obsahu */
 #content span{
     color: #DCF900;
     font-family: "Showcard Gothic", Serif;
 }
 
-#footer {
-    margin:auto;
-    width: 80%;
+/* Nastavení zápatí stránky*/
+#myfooter {
+    /* TODO: zmenit barvu textu*/
+    background-color: #C5C5C5C5;
+    padding: 25px;
     border-radius: 0px 0px 20px 20px;
-
+    font-family: Serif;
+    font-size: 16px;
+    max-height: 50px;
 }
-/*
-<!--"Droid Sans Mono" -->
-*/
+

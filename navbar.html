@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse">
+    <!-- Zarovnání jednotlivých složek v menu -->
+    <div class="container-fluid">
+        <!-- Hlavní složka menu. Ta se nezkroluje při zmenšení.-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                <!-- Zobrazení ikony po zmenšení menu-->
+                <span class="glyphicon glyphicon-list" style="color: #FFFFFF"></span>
+            </button>
+            <!-- Ikona Baltíka, po kliknutí se přejde na úvodní stránku-->
+            <a class="navbar-brand" href="index.html"><img src="Image/Baltik.png" width="45px" height="45px" alt="Baltík" id="img"></a>
+        </div>
+        <!-- Jednotlivé složky menu v levé části-->
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="baltik-info.html">O Baltíku</a></li>
+                <li><a href="articles.html">Články</a></li>
+            </ul>
+            <!-- Jednotlivé složky menu v pravé části-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Přihlásit </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrovat </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    // Umožnění přidání aktivní třídy menu.
+    jQuery(document).ready(function($) {
+       var path = window.location.pathname.split("/").pop();
+       var target = $('nav a[href="'+path+'"]');
+       $('li [href="'+path+'"]').parent().addClass('active');
+    });
+</script>
