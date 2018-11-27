@@ -40,14 +40,59 @@
     font-family: "Showcard Gothic", Serif;
 }
 
-/* Nastavení zápatí stránky*/
+/* Nastavení zápatí stránky */
 #myfooter {
-    /* TODO: zmenit barvu textu*/
-    background-color: #C5C5C5C5;
+    background-color: #D0D0D0;
     padding: 25px;
     border-radius: 0px 0px 20px 20px;
-    font-family: Serif;
-    font-size: 16px;
-    max-height: 50px;
+    max-height: 30px;
 }
 
+/* Nastavení textu v zápatí stránky */
+#myfooter p {
+    color: #8F04A8;
+    font-family: Serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Nastavení stylu formuláři */
+.form {
+    display: flex;
+    font-size: 18px;
+}
+
+/* Nastavení stylu ikonám ve formuláři */
+.form i{
+    color: #DCF900;
+    background-color: #8F04A8;
+    padding: 10px;
+}
+
+/* Nastavení stylu rámečku formuláře */
+.form input {
+    border: 2px solid #8F04A8 ;
+}
+
+/* Nastavení stylu tlačítku ve formuláři */
+#button {
+    color: #DCF900;
+    background-color: #8F04A8;
+    width: 100%;
+    padding: 8px;
+    opacity:0.9;
+    font-weight: normal;
+}
+
+/* Nastavení tlačátku při najetí ve formuláři */
+#button:hover {
+    opacity: 1;
+}
+
+/* Nastavení obalovému divu ve formuláři */
+.input-icon {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 40px;
+}

@@ -22,7 +22,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tomáš Kotous">
-    <title>O Baltíku</title>
+    <title>Přihlásit</title>
     <!-- Přepsání původního nastavení bootstrapu -->
     <style>
         /* Odstranění zděděné mezery pod hlavou stránky */
@@ -47,17 +47,26 @@
 <nav id="navbar"></nav>
 
 <!-- Obsah stránky -->
-<div class="container" id="content">
-    <h3> Základní informace </h3>
-    <p>Baltík je programovací jazyk, ve kterém se neprogramuje pomocí textových příkazů, ale tyto příkazy jsou nahrazeny ikonami (ve verzi Baltie 4 C# již ale jsou
-    textové příkazy). Byla založena českou společností SGP System. Mimo programovacího jazyku zastává Baltík funkci vývojového prostředí.
-    </p>
-    <h3> Verze Baltíku </h3>
-    <p> Baltík 2 </br>
-        Baltík 3 </br>
-        Baltík 4 C#
-    </p>
+<div class="container form" id="content">
+    <form target="_self">
+        <fieldset>
+            <legend> <h3> Přihlášení: </h3></legend>
+            Uživatelské jméno:
+            <div class="input-icon">
+                <i class="glyphicon glyphicon-user icon"></i>
+                <input type="text" name="username" required>
+            </div>
+            Heslo:
+            <div class="input-icon">
+                <i class="glyphicon glyphicon-lock"></i>
+                <input type="password" name="password" required>
+            </div>
+            <div class="input-container">
+                <input type="submit" id="button" name="login" value="Přihlásit">
+            </div>
 
+        </fieldset>
+    </form>
 </div>
 
 <!-- Zápatí stránky -->
